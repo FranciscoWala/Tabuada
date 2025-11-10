@@ -88,21 +88,22 @@ public class TelaTabuada extends Application{
 
         // Criar os componentes da boxResultados
         Label labelResultado = new Label("Resultado: ");
-        ListView listaResultados = new ListView();
+        ListView listaTabuada = new ListView();
+        String[] cidades = new String[5];
         // Criando dados para listview
-//        String[5] cidades = new ListView();
-//        cidades[0] = "Itapevi";
-//        cidades[1] = "Rio";
-//        cidades[2] = "Sao Paulo";
-//        cidades[3] = "Brasil";
-//        cidades[4] = "Rio Branco";
-//
-//        listaResultados.getItems().addAll(cidades);
+
+        cidades[0] = "Itapevi";
+        cidades[1] = "Rio";
+        cidades[2] = "Sao Paulo";
+        cidades[3] = "Brasil";
+        cidades[4] = "Rio Branco";
+
+        listaTabuada.getItems().addAll(cidades);
 
 
 
         // Adicionar os componentes ao boxResultados
-        boxResultado.getChildren().addAll(labelResultado,listaResultados);
+        boxResultado.getChildren().addAll(labelResultado,listaTabuada);
 
         // Adicionar componentes ao root
         root.getChildren().addAll(header);
