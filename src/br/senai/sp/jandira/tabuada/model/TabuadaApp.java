@@ -44,10 +44,10 @@ public class TabuadaApp {
             i = i + 1;
         }
 
-        exibirTabuada();
+        ExibirTabuada();
 
     }
-    public void exibirTabuada(){
+    public void ExibirTabuada(){
 
         int i = 0;
         while(i < tabuada.length){
